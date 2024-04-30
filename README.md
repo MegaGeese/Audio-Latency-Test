@@ -9,7 +9,95 @@ Ensure that both the audio source and recording source are your primary audio de
 Run python '.\pyaudioTest audio.py' and wait
 
 # Findings
+Note: Beacn is an audio processing software that I use
+Things that do have an effect on audio signal times: 
+# Without Beacn
+## Short Direct Connection (Line-Out to Line-In) 82cm cable 10 tests 
+### Average: 0.15654ms
+```
+Latency = 0.14934ms
+Latency = 0.15826ms
+Latency = 0.15465ms
+Latency = 0.15826ms
+Latency = 0.15797ms
+Latency = 0.15789ms
+Latency = 0.15511ms
+Latency = 0.15702ms
+Latency = 0.15871ms
+Latency = 0.15825ms
+```
+## Long Direct Connection (Scarlet Focusrite Solo to Line-In) 609 cm cable 10 tests
+### Average: 0.25939ms
+```
+Latency = 0.25274ms
+Latency = 0.25994ms
+Latency = 0.26112ms
+Latency = 0.25980ms
+Latency = 0.25985ms
+Latency = 0.26102ms
+Latency = 0.26027ms
+Latency = 0.25819ms
+Latency = 0.26131ms
+Latency = 0.25968ms
+```
+## Long Direct Connection (Atom Amp + Schiit DAC  to Line-In) 609 cm cable 10 tests
+### Average: 0.16394ms
+```
+Latency = 0.15477ms
+Latency = 0.15806ms
+Latency = 0.15777ms
+Latency = 0.18646ms
+Latency = 0.15719ms
+Latency = 0.16233ms
+Latency = 0.15570ms
+Latency = 0.15727ms
+Latency = 0.16254ms
+Latency = 0.18732ms
+```
+## 2.4GHz transeiver (Atom Amp + Schiit DAC to Line-In) 122cm between 10 tests
+### Average: 0.18552ms
+```
+Latency = 0.18565ms
+Latency = 0.18909ms
+Latency = 0.18925ms
+Latency = 0.15773ms
+Latency = 0.18874ms
+Latency = 0.18962ms
+Latency = 0.18812ms
+Latency = 0.18942ms
+Latency = 0.18869ms
+Latency = 0.18894ms
+```
+## 2.4GHz transeiver (Line-Out to Line-In) 122cm between 10 tests
+### Average: 0.18717ms
+```
+Latency = 0.18063ms
+Latency = 0.18684ms
+Latency = 0.18901ms
+Latency = 0.18502ms
+Latency = 0.18892ms
+Latency = 0.18908ms
+Latency = 0.18670ms
+Latency = 0.19010ms
+Latency = 0.18764ms
+Latency = 0.18778ms
+```
+## Bluetooth transiever (Line-Out to Line-In) 122cm between 10 tests
+### Average: 0.33987ms
+```
+Latency = 0.34211ms
+Latency = 0.32019ms
+Latency = 0.32134ms
+Latency = 0.34488ms
+Latency = 0.32052ms
+Latency = 0.35162ms
+Latency = 0.34641ms
+Latency = 0.35065ms
+Latency = 0.35130ms
+Latency = 0.34971ms
+```
 
+# With Beacn
 ## Short Direct Connection (Line-Out to Line-In) 82cm cable 10 tests 
 ### Average: 0.299544ms
 ```
@@ -25,7 +113,7 @@ Latency = 0.29851ms
 Latency = 0.29841ms
 ```
 ## Long Direct Connection (Line-Out to Line-In) 609 cm cable 10 tests
-### Average: 0.296539
+### Average: 0.296539ms
 ```
 Latency = 0.29913ms
 Latency = 0.29747ms
@@ -39,7 +127,7 @@ Latency = 0.29654ms
 Latency = 0.29716ms
 ```
 ## Long Direct Connection (Scarlet Focusrite Solo to Line-In) 609 cm cable 10 tests
-### Average: 0.386003
+### Average: 0.386003ms
 ```
 Latency = 0.38418ms
 Latency = 0.38627ms
@@ -53,7 +141,7 @@ Latency = 0.38559ms
 Latency = 0.38660ms
 ```
 ## 2.4GHz transeiver (Line-Out to Line-In) 10 tests
-### Average: 0.317595
+### Average: 0.317595ms
 ```
 Latency = 0.31504ms
 Latency = 0.32019ms
@@ -109,7 +197,7 @@ Latency = 0.29859ms
 Latency = 0.31179ms
 ```
 ## Bluetooth transiever (Line-Out to Line-In) 10 tests
-### Average: 0.453861
+### Average: 0.453861ms
 ```
 Latency = 0.45834ms
 Latency = 0.45427ms
