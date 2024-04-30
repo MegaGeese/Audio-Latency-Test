@@ -71,4 +71,4 @@ for i in range(repeat_times):
     # print(f'Latency = {"%.2f" % end_latency}ms - {"%.2f" % start_latency}ms = {"%.5f" % total_latency}ms')
     print(f'Latency = {"%.5f" % total_latency}ms')
 
-print(f'Latency Avg: {"%.5f" % total/repeat_times}ms')
+print(f'Average: {"%.5f" % (total/repeat_times)}ms')
