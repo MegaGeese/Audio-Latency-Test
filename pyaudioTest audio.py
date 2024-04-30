@@ -11,6 +11,7 @@ start_latency_times = []
 print("* recording")
 
 for i in range(repeat_times):
+    time.sleep(1)
     wf = wave.open("./kick.wav", 'rb')
 
     CHUNK = 1024
@@ -52,8 +53,9 @@ for i in range(repeat_times):
         rms = audioop.rms(data, 2)
         if(rms > threshold):
             end_latency_times.append(time.time())
+            record.close()
             over_threshold = True
-        time.sleep(0.1)
+        time.sleep(0.0001)
 
 print("* done")
 stream.close()
@@ -64,4 +66,5 @@ for i in range(repeat_times):
     end_latency = end_latency_times[i]
     start_latency = start_latency_times[i]
     total_latency = end_latency - start_latency
-    print(f'Latency = {"%.2f" % end_latency}ms - {"%.2f" % start_latency}ms = {"%.5f" % total_latency}ms')
+    # print(f'Latency = {"%.2f" % end_latency}ms - {"%.2f" % start_latency}ms = {"%.5f" % total_latency}ms')
+    print(f'Latency = {"%.5f" % total_latency}ms')
