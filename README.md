@@ -66,6 +66,48 @@ Latency = 0.30901ms
 Latency = 0.31645ms
 Latency = 0.31963ms
 ```
+## 2.4GHz transeiver (Scarlet Focusrite Solo to Line-In) 122cm between 10 tests
+### Average: 0.41358ms
+```
+Latency = 0.41679ms
+Latency = 0.41152ms
+Latency = 0.41133ms
+Latency = 0.41062ms
+Latency = 0.41251ms
+Latency = 0.41101ms
+Latency = 0.41204ms
+Latency = 0.41078ms
+Latency = 0.41945ms
+Latency = 0.41976ms
+```
+## 2.4GHz transeiver (Atom Amp to Line-In) 122cm between 10 tests
+### Average: 0.31025ms
+```
+Latency = 0.31473ms
+Latency = 0.30949ms
+Latency = 0.31375ms
+Latency = 0.31173ms
+Latency = 0.30887ms
+Latency = 0.31254ms
+Latency = 0.31246ms
+Latency = 0.31019ms
+Latency = 0.29769ms
+Latency = 0.31107ms
+```
+## 2.4GHz transeiver (Atom Amp + Schiit DAC to Line-In) 122cm between 10 tests
+### Average: 0.30662ms
+```
+Latency = 0.31340ms
+Latency = 0.31268ms
+Latency = 0.31120ms
+Latency = 0.29982ms
+Latency = 0.31006ms
+Latency = 0.29871ms
+Latency = 0.31084ms
+Latency = 0.29910ms
+Latency = 0.29859ms
+Latency = 0.31179ms
+```
 ## Bluetooth transiever (Line-Out to Line-In) 10 tests
 ### Average: 0.453861
 ```
