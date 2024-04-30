@@ -10,7 +10,19 @@ Run python '.\pyaudioTest audio.py' and wait
 
 # Findings
 Note: Beacn is an audio processing software that I use
-Things that do have an effect on audio signal times: 
+### Beacn
+Beacn adds about a 0.15ms delay to the audio audio latency
+### Cable Length
+Cable length has no appreciable affect on audio audio latency
+### Atom Amp/Schiit DAC
+Neither the Atom Amp nor the Shiit DAC has no appreciable affect on audio latency
+### Scarlett Focusrite
+Surprisingly the Scarlett interface adds about a 0.1ms delay to the audio chain
+### 2.4GHz
+The transievers that I have seem to add about 0.03ms of delay to the audio chain
+### Bluetooth
+The bluetooth TX/RX pucks that I have added about 0.18ms of delay
+
 # Without Beacn
 ## Short Direct Connection (Line-Out to Line-In) 82cm cable 10 tests 
 ### Average: 0.15654ms
