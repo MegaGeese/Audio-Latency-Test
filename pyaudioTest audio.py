@@ -62,9 +62,13 @@ stream.close()
 record.close()
 p.terminate()
 
+total = 0
 for i in range(repeat_times):
     end_latency = end_latency_times[i]
     start_latency = start_latency_times[i]
     total_latency = end_latency - start_latency
+    total += total_latency
     # print(f'Latency = {"%.2f" % end_latency}ms - {"%.2f" % start_latency}ms = {"%.5f" % total_latency}ms')
     print(f'Latency = {"%.5f" % total_latency}ms')
+
+print(f'Latency Avg: {"%.5f" % total/repeat_times}ms')
