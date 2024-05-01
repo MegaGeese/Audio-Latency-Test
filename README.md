@@ -110,6 +110,7 @@ Latency = 0.34971ms
 ```
 
 # With Beacn
+Not much point in posting all this but I recorded the data before realizing that it had an effect on the latency :3
 ## Short Direct Connection (Line-Out to Line-In) 82cm cable 10 tests 
 ### Average: 0.299544ms
 ```
