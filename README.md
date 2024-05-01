@@ -1,12 +1,14 @@
 # Audio Latency Test
-## Audio latency tester used to test latency over different protocols i.e. bluetooth, 2.4GHz, physical cable
+### Audio latency tester used to test latency over different protocols i.e. bluetooth, 2.4GHz, physical cable
 
 ## Setup: 
 Start by plugging in your computers audio output (line-out, audio interface, DAC, ect.) into your computer's audio input (line-in, mic-in, interface, ect.)
 
 Ensure that both the audio source and recording source are your primary audio devices
 
-Run python '.\pyaudioTest audio.py' and wait
+Install [pyaudio](https://people.csail.mit.edu/hubert/pyaudio/)
+
+Run runTest.py and wait
 
 # Findings
 Note: Beacn is an audio processing software that I use
